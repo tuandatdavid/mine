@@ -1,4 +1,9 @@
 modules:
+  - type: os-release
+    properties:
+      ID: mine
+      NAME: Mine
+      PRETTY_NAME: This Image is Mine
   - type: signing
   - type: brew
     nofile-limits: true # increase nofile limits
@@ -9,8 +14,11 @@ modules:
         destination: /
   - type: dnf
     repos:
+      cleanup: true
       files:
         - codium.repo
+      copr:
+        - ublue-os/packages
     install:
       packages:
         - adw-gtk3-theme
@@ -23,6 +31,7 @@ modules:
         - distrobox
         - tailscale
         - codium
+        - uupd
     remove:
       auto-remove: false
       packages:
@@ -50,3 +59,11 @@ modules:
     install:
       - gnome-vrr
       - dconf-update-service
+  - type: systemd
+    system:
+      enabled:
+        uupd.service
+      disabled:
+        - rpm-ostreed-automatic.timer
+        - bootc-fetch-apply-updates.timer
+  - type: initramfs
