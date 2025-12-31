@@ -1,0 +1,25 @@
+modules:
+  - type: dnf
+    repos:
+      cleanup: true
+      copr:
+        - ublue-os/staging
+      files:
+        - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
+    install:
+      packages:
+        - fw-fanctrl
+        - fw-ectool
+        - framework-system
+  - type: default-flatpaks
+    configurations:
+      install: # system flatpaks we want all users to have and not remove
+        - au.stevetech.yafi
+        - org.gnome.Firmware
+        - org.easycoding.TunedSwitcher
+  - type: gnome-extensions
+    install:
+      - Framework Fan Control
+      - Battery Health Charging
+      - Battery Time
+      - GSConnect
