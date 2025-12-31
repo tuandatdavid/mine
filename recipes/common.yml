@@ -60,10 +60,6 @@ modules:
           - io.github.celluloid_player.Celluloid
           - com.mattjakeman.ExtensionManager
           - io.bassi.Amberol
-  - type: bling
-    install:
-      - gnome-vrr
-      - dconf-update-service
   - type: systemd
     system:
       enabled:
