@@ -1,6 +1,16 @@
 modules:
   - type: signing
+  - type: brew
+    nofile-limits: true # increase nofile limits
+    brew-analytics: false # disable telemetry
+  - type: files
+    files:
+      - source: system   # copies `files/system/*` (* means everything inside it) into your image's root folder `/`
+        destination: /
   - type: dnf
+    repos:
+      copr:
+        - tulilirockz/fw-fanctrl
     install:
       packages:
         - adw-gtk3-theme
@@ -10,6 +20,7 @@ modules:
         - libguestfs-tools
         - python3-libguestfs
         - steam # just like on bazzite
+        - fw-fanctrl
     remove:
       auto-remove: false
       packages:
