@@ -41,21 +41,25 @@ modules:
         - gnome-software # bazaar is better anyways
   - type: default-flatpaks
     configurations:
-      install:
-        - app.zen_browser.zen
-        - com.github.tchx84.Flatseal
-        - io.github.flattool.Warehouse
-        - net.nokyan.Resources
-        - io.github.shiftey.Desktop
-        - me.iepure.devtoolbox
-        - org.libreoffice.LibreOffice
-        - org.gnome.Calendar
-        - io.github.kolunmi.Bazaar
-        - org.inkscape.Inkscape
-        - org.gnome.DejaDup
-        - io.github.celluloid_player.Celluloid
-        - com.mattjakeman.ExtensionManager
-        - io.bassi.Amberol
+      - notify: true
+        scope: system
+        repo:
+          title: Flathub
+        install:
+          - app.zen_browser.zen
+          - com.github.tchx84.Flatseal
+          - io.github.flattool.Warehouse
+          - net.nokyan.Resources
+          - io.github.shiftey.Desktop
+          - me.iepure.devtoolbox
+          - org.libreoffice.LibreOffice
+          - org.gnome.Calendar
+          - io.github.kolunmi.Bazaar
+          - org.inkscape.Inkscape
+          - org.gnome.DejaDup
+          - io.github.celluloid_player.Celluloid
+          - com.mattjakeman.ExtensionManager
+          - io.bassi.Amberol
   - type: bling
     install:
       - gnome-vrr
