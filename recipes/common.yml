@@ -1,0 +1,19 @@
+modules:
+  - type: signing
+  - type: dnf
+    install:
+      packages:
+        - adw-gtk3-theme
+        - libvirt-daemon-config-network
+        - libvirt-daemon-kvm
+        - qemu-kvm
+        - libguestfs-tools
+        - python3-libguestfs
+        - steam # just like on bazzite
+    remove:
+      auto-remove: false
+      packages:
+        - nvtop
+        - htop
+        - btop
+        - gnome-software # bazaar is better anyways
