@@ -41,7 +41,7 @@ modules:
         - gnome-software # bazaar is better anyways
   - type: default-flatpaks
     configurations:
-      install: # system flatpaks we want all users to have and not remove
+      install:
         - app.zen_browser.zen
         - com.github.tchx84.Flatseal
         - io.github.flattool.Warehouse
