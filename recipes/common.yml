@@ -8,6 +8,9 @@ modules:
       - source: system   # copies `files/system/*` (* means everything inside it) into your image's root folder `/`
         destination: /
   - type: dnf
+    repos:
+      files:
+        - codium.repo
     install:
       packages:
         - adw-gtk3-theme
@@ -17,6 +20,9 @@ modules:
         - libguestfs-tools
         - python3-libguestfs
         - steam # just like on bazzite
+        - distrobox
+        - tailscale
+        - codium
     remove:
       auto-remove: false
       packages:
@@ -24,3 +30,23 @@ modules:
         - htop
         - btop
         - gnome-software # bazaar is better anyways
+  - type: default-flatpaks
+    install: # system flatpaks we want all users to have and not remove
+      - app.zen_browser.zen
+      - com.github.tchx84.Flatseal
+      - io.github.flattool.Warehouse
+      - net.nokyan.Resources
+      - io.github.shiftey.Desktop
+      - me.iepure.devtoolbox
+      - org.libreoffice.LibreOffice
+      - org.gnome.Calendar
+      - io.github.kolunmi.Bazaar
+      - org.inkscape.Inkscape
+      - org.gnome.DejaDup
+      - io.github.celluloid_player.Celluloid
+      - com.mattjakeman.ExtensionManager
+      - io.bassi.Amberol
+  - type: bling
+    install:
+      - gnome-vrr
+      - dconf-update-service
