@@ -1,6 +1,6 @@
 # mine &nbsp; [![bluebuild build badge](https://github.com/tuandatdavid/mine/actions/workflows/build.yml/badge.svg)](https://github.com/tuandatdavid/mine/actions/workflows/build.yml)
 
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
+Because this image is mine (pun intended lol)
 
 After setup, it is recommended you update this README to describe your custom image.
 
