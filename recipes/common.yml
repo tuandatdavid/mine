@@ -18,6 +18,12 @@ modules:
       nonfree: rpmfusion
     install:
       packages:
+        - gnome-shell
+        - nautilus
+        - tuned
+        - tuned-ppd
+        - bolt
+        - boltctl
         - adw-gtk3-theme
         - libvirt-daemon-config-network
         - libvirt-daemon-kvm
@@ -40,6 +46,7 @@ modules:
     remove:
       auto-remove: false
       packages:
+        - gnome-software
         - nvtop
         - htop
         - btop
