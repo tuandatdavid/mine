@@ -1,0 +1,8 @@
+[org.gnome.desktop.peripherals.touchpad] 
+tap-to-click=true  
+[org.gnome.settings-daemon.plugins.power] 
+power-button-action='suspend'
+[org.gnome.shell.extensions.Logo-menu]
+show-activities-button='true'
+hide-forcequit='false'
+menu-button-icon-image='7'
