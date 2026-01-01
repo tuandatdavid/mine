@@ -1,5 +1,6 @@
 [org.gnome.desktop.peripherals.touchpad] 
-tap-to-click=true  
+tap-to-click=true
+natural-scroll = true
 [org.gnome.settings-daemon.plugins.power] 
 power-button-action='suspend'
 [org.gnome.desktop.interface]
@@ -12,3 +13,7 @@ workspaces-only-on-primary=true
 focus-change-on-pointer-rest=true
 [org.gnome.shell]
 enabled-extensions = ['appindicatorsupport@rgcjonas.gmail.com','drive-menu@gnome-shell-extensions.gcampax.github.com', 'grand-theft-focus@zalckos.github.com', 'caffeine@patapon.info','tailscale-status@maxgallup.github.com', 'AlphabeticalAppGrid@stuarthayhurst', 'mediacontrols@cliffniff.github.com', 'battery-time@eetumos.github.com', 'gsconnect@andyholmes.github.io','fw-fanctrl-revived@willow.sh', 'Battery-Health-Charging@maniacx.github.com']
+[org.gnome.desktop.interface:zorin]
+gtk-theme = 'adw-gtk3-dark'
+[org.gnome.desktop.wm.preferences]
+button-layout = 'appmenu:close'
