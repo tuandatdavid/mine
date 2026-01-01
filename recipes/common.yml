@@ -91,6 +91,7 @@ modules:
       - Grand Theft Focus
       - Removable Drive Menu
       - 4269 # Alphabetical app grid
+      - Caffeine
   - type: gschema-overrides
     include:
       - zz1-common.gschema.override
