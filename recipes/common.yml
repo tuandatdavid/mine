@@ -90,6 +90,7 @@ modules:
       - 4470 # Media Controls
       - Grand Theft Focus
       - Removable Drive Menu
+      - 4269 # Alphabetical app grid
   - type: gschema-overrides
     include:
       - zz1-common.gschema.override
