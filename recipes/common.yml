@@ -85,7 +85,6 @@ modules:
     install:
       - Blur my Shell
       - AppIndicator and KStatusNotifierItem Support
-      - Logo Menu
       - 5112 # Tailscale Status
       - 4470 # Media Controls
       - Grand Theft Focus
