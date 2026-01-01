@@ -176,3 +176,9 @@ my-cli:
 
     # Entrypoint
     main ""
+
+distrobox-assemble CONTAINER="prompt" ACTION="create" FILE="/etc/distrobox/distrobox.ini":
+    #!/usr/bin/bash
+    # Distroboxes are gathered from /etc/distrobox/distrobox.ini, add them there
+    source /usr/lib/ujust/ujust.sh
+    AssembleList {{ FILE }} {{ ACTION }} {{ CONTAINER }}
