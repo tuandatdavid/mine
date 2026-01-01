@@ -7,6 +7,7 @@ power-button-action='suspend'
 color-scheme = 'prefer-dark'
 [org.gnome.mutter]
 attach-modal-dialogs=true
+experimental-features = ['xwayland-native-scaling', 'variable-refresh-rate']
 edge-tiling=true
 dynamic-workspaces=true
 workspaces-only-on-primary=true
