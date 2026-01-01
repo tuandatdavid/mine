@@ -101,6 +101,9 @@ modules:
   - type: justfiles
     validate: true
     install: true
+  - type: script
+    snippets:
+      - "chmod +x /usr/bin/ugum"
   - type: initramfs
   - type: os-release
     properties:
