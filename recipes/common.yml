@@ -77,6 +77,20 @@ modules:
           - com.mattjakeman.ExtensionManager
           - io.bassi.Amberol
           - io.github.kolunmi.Bazaar
+          - org.gnome.TextEditor
+          - com.github.wwmm.easyeffects
+          - org.pipewire.Helvum
+          - io.github.ungoogled_software.ungoogled_chromium
+          - io.github.nozwock.Packet
+          - org.gnome.Calculator
+          - com.spotify.Client
+          - io.github.nozwock.Packet
+          - org.nickvision.tagger
+          - org.gnome.SoundRecorder
+          - io.github.vikdevelop.SaveDesktop
+          - com.heroicgameslauncher.hgl
+          - org.prismlauncher.PrismLauncher
+          - org.nicotine_plus.Nicotine
   - type: systemd
     system:
       enabled:
