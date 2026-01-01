@@ -2,3 +2,13 @@
 tap-to-click=true  
 [org.gnome.settings-daemon.plugins.power] 
 power-button-action='suspend'
+[org.gnome.desktop.interface]
+color-scheme = 'prefer-dark'
+[org.gnome.mutter]
+attach-modal-dialogs=true
+edge-tiling=true
+dynamic-workspaces=true
+workspaces-only-on-primary=true
+focus-change-on-pointer-rest=true
+[org.gnome.shell]
+enabled-extensions = ['appindicatorsupport@rgcjonas.gmail.com','drive-menu@gnome-shell-extensions.gcampax.github.com', 'grand-theft-focus@zalckos.github.com', 'caffeine@patapon.info','tailscale-status@maxgallup.github.com', 'AlphabeticalAppGrid@stuarthayhurst', 'mediacontrols@cliffniff.github.com']
