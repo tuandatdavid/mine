@@ -2,6 +2,7 @@ modules:
   - type: os-release
     properties:
       ID: mine
+      ID_LIKE: fedora
       NAME: Mine
       PRETTY_NAME: This Image is Mine
   - type: signing
