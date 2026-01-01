@@ -1,8 +1,4 @@
 modules:
-  - type: os-release
-    properties:
-      NAME: Mine
-      PRETTY_NAME: This Image is Mine
   - type: signing
   - type: brew
     nofile-limits: true # increase nofile limits
@@ -95,4 +91,8 @@ modules:
     validate: true
     install: true
   - type: initramfs
+  - type: os-release
+    properties:
+      NAME: Mine
+      PRETTY_NAME: This Image is Mine
 
