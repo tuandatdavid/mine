@@ -18,6 +18,7 @@ modules:
       nonfree: rpmfusion
     install:
       packages:
+        - gnome-shell
         - adw-gtk3-theme
         - libvirt-daemon-config-network
         - libvirt-daemon-kvm
