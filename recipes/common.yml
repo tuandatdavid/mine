@@ -67,6 +67,15 @@ modules:
       disabled:
         - rpm-ostreed-automatic.timer
         - bootc-fetch-apply-updates.timer
+  - type: gnome-extensions
+    install:
+      - Blur my Shell
+      - AppIndicator and KStatusNotifierItem Support
+      - Logo Menu
+      - Tailscale Status
+      - Media Controls
+      - Grand Theft Focus
+      - Removable Drive Menu
   - type: justfiles
     validate: true
     install: true
