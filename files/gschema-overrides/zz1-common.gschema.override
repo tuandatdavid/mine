@@ -1,5 +1,5 @@
-[org.gnome.desktop.peripherals.touchpad] 
-tap-to-click=true  
+[org.gnome.desktop.peripherals.mouse] 
+natural-scroll = true
 [org.gnome.settings-daemon.plugins.power] 
 power-button-action='suspend'
 [org.gnome.desktop.interface]
