@@ -7,14 +7,14 @@ power-button-action='suspend'
 color-scheme = 'prefer-dark'
 [org.gnome.mutter]
 attach-modal-dialogs=true
-experimental-features = ['xwayland-native-scaling', 'variable-refresh-rate']
+experimental-features = ['xwayland-native-scaling', 'variable-refresh-rate', 'autoclose-xwayland']
 edge-tiling=true
 dynamic-workspaces=true
 workspaces-only-on-primary=true
 focus-change-on-pointer-rest=true
 [org.gnome.shell]
 enabled-extensions = ['appindicatorsupport@rgcjonas.gmail.com','drive-menu@gnome-shell-extensions.gcampax.github.com', 'grand-theft-focus@zalckos.github.com', 'caffeine@patapon.info','tailscale-status@maxgallup.github.com', 'AlphabeticalAppGrid@stuarthayhurst', 'mediacontrols@cliffniff.github.com', 'battery-time@eetumos.github.com', 'gsconnect@andyholmes.github.io','fw-fanctrl-revived@willow.sh', 'Battery-Health-Charging@maniacx.github.com']
-[org.gnome.desktop.interface:zorin]
+[org.gnome.desktop.interface]
 gtk-theme = 'adw-gtk3-dark'
 [org.gnome.desktop.wm.preferences]
 button-layout = 'appmenu:close'
