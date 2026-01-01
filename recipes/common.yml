@@ -73,7 +73,7 @@ modules:
       - AppIndicator and KStatusNotifierItem Support
       - Logo Menu
       - 5112 # Tailscale Status
-      - Media Controls
+      - 4470 # Media Controls
       - Grand Theft Focus
       - Removable Drive Menu
   - type: gschema-overrides
