@@ -18,7 +18,6 @@ modules:
       nonfree: rpmfusion
     install:
       packages:
-        - gnome-shell
         - adw-gtk3-theme
         - libvirt-daemon-config-network
         - libvirt-daemon-kvm
@@ -44,7 +43,6 @@ modules:
         - nvtop
         - htop
         - btop
-        - gnome-software # bazaar is better anyways
         - libfdk-aac
   - type: default-flatpaks
     configurations:
@@ -61,7 +59,6 @@ modules:
           - me.iepure.devtoolbox
           - org.libreoffice.LibreOffice
           - org.gnome.Calendar
-          - io.github.kolunmi.Bazaar
           - org.inkscape.Inkscape
           - org.gnome.DejaDup
           - io.github.celluloid_player.Celluloid
