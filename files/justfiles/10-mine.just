@@ -182,3 +182,10 @@ distrobox-assemble CONTAINER="prompt" ACTION="create" FILE="/etc/distrobox/distr
     # Distroboxes are gathered from /etc/distrobox/distrobox.ini, add them there
     source /usr/lib/ujust/ujust.sh
     AssembleList {{ FILE }} {{ ACTION }} {{ CONTAINER }}
+spicetify:
+    #!/usr/bin/bash
+    cd /var/tmp
+    git clone https://github.com/boudywho/easy-spicetify-arch.git
+    cd easy-spicetify-arch
+    chmod +x spicetify.sh
+    ./spicetify.sh
