@@ -23,3 +23,6 @@ modules:
       - Battery Health Charging
       - Battery Time
       - GSConnect
+  - type: gschema-overrides
+    include:
+      - zz2-framework.gschema.override
