@@ -72,10 +72,13 @@ modules:
       - Blur my Shell
       - AppIndicator and KStatusNotifierItem Support
       - Logo Menu
-      - Tailscale Status
+      - 5112 # Tailscale Status
       - Media Controls
       - Grand Theft Focus
       - Removable Drive Menu
+  - type: gschema-overrides
+    include:
+      - zz1-common.gschema.override
   - type: justfiles
     validate: true
     install: true
