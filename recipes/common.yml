@@ -67,4 +67,8 @@ modules:
       disabled:
         - rpm-ostreed-automatic.timer
         - bootc-fetch-apply-updates.timer
+  - type: justfiles
+    validate: true
+    install: true
   - type: initramfs
+
