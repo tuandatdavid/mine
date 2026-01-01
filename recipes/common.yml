@@ -43,6 +43,8 @@ modules:
         - containerd.io
         - docker-buildx-plugin
         - docker-compose-plugin
+      exclude:
+        - gnome-software
     remove:
       auto-remove: false
       packages:
