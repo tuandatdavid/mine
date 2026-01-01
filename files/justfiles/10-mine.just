@@ -1,3 +1,5 @@
+# vim: set ft=make :
+
 regenerate-grub:
     #!/usr/bin/bash
     source /usr/libexec/bazzite-boot-remount
@@ -8,36 +10,32 @@ regenerate-grub:
       sudo grub2-mkconfig -o /etc/grub2.cfg
     fi
     remount_boot_ro
+
 enable-tailscale:
     systemctl enable --now tailscaled.service
+
 my-cli:
     #!/usr/bin/bash
     #shellcheck disable=SC2154
-
     set -eou pipefail
-
     # Source libujust for colors/ugum
     source /usr/lib/ujust/ujust.sh
-
     # Exit Handling
     function Exiting(){
         printf "%s%sExiting...%s\n" "${red}" "${bold}" "${normal}"
         printf "Rerun script with %s%sujust bazzite-cli%s\n" "${blue}" "${bold}" "${normal}"
         exit 0
     }
-
     # Trap function
     function ctrl_c(){
         printf "\nSignal SIGINT caught\n"
         Exiting
     }
-
     # Brew Bundle Install
     function brew-bundle(){
     echo 'Installing bling from Homebrew 🍻🍻🍻'
     brew bundle --file /usr/share/mine/my-cli.Brewfile
     }
-
     # Check if bling is already sourced
     function check-bling() {
     shell="$1"
@@ -70,7 +68,6 @@ my-cli:
         exit 1;
     fi
     }
-
     # Add Bling
     function add-bling(){
     shell="$1"
@@ -103,7 +100,6 @@ my-cli:
         echo 'Unknown Shell ... You are on your own'
     fi
     }
-
     # Remove bling, handle if old method
     function remove-bling(){
     shell="$1"
