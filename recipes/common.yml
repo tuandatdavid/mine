@@ -83,7 +83,6 @@ modules:
         - bootc-fetch-apply-updates.timer
   - type: gnome-extensions
     install:
-      - Blur my Shell
       - AppIndicator and KStatusNotifierItem Support
       - 5112 # Tailscale Status
       - 4470 # Media Controls
