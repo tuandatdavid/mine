@@ -12,12 +12,14 @@ modules:
       cleanup: true
       files:
         - codium.repo
+        - gum.repo
         - https://download.docker.com/linux/fedora/docker-ce.repo
       copr:
         - ublue-os/packages
       nonfree: rpmfusion
     install:
       packages:
+        - gum
         - gnome-shell
         - nautilus
         - tuned
