@@ -28,6 +28,8 @@ modules:
         - qemu-kvm
         - libguestfs-tools
         - python3-libguestfs
+        - fdk-aac 
+        - fdk-aac.i686
         - steam # just like on bazzite
         - distrobox
         - tailscale
@@ -46,6 +48,7 @@ modules:
         - htop
         - btop
         - gnome-software # bazaar is better anyways
+        - libfdk-aac
   - type: default-flatpaks
     configurations:
       - notify: true
