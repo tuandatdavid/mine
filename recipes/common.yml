@@ -71,6 +71,7 @@ modules:
           - io.github.celluloid_player.Celluloid
           - com.mattjakeman.ExtensionManager
           - io.bassi.Amberol
+          - io.github.kolunmi.Bazaar
   - type: systemd
     system:
       enabled:
