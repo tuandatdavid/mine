@@ -13,10 +13,14 @@ modules:
         - framework-system
   - type: default-flatpaks
     configurations:
-      install: # system flatpaks we want all users to have and not remove
-        - au.stevetech.yafi
-        - org.gnome.Firmware
-        - org.easycoding.TunedSwitcher
+      - scope: system
+        repo:
+          title: Flathub
+        install: # system flatpaks we want all users to have and not remove
+          - au.stevetech.yafi
+          - org.gnome.Firmware
+          - org.easycoding.TunedSwitcher
+          - org.gnome.PowerStats
   - type: gnome-extensions
     install:
       - Framework Fan Control
