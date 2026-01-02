@@ -22,9 +22,7 @@ if [ "$(command -v ug)" ]; then
     alias xzfgrep='ug -zF'
 fi
 
-if [ "$(command -v z)" ]; then
-    alias cd='z'
-fi
+alias cd='z'
 
 if [ "$(basename "$SHELL")" = "bash" ]; then
     #shellcheck disable=SC1091
