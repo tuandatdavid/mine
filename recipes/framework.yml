@@ -11,6 +11,7 @@ modules:
         - fw-fanctrl
         - fw-ectool
         - framework-system
+        - powertop
   - type: default-flatpaks
     configurations:
       - scope: system
