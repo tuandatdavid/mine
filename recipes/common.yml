@@ -91,6 +91,7 @@ modules:
           - org.nicotine_plus.Nicotine
           - io.anytype.anytype
           - org.virt_manager.virt-manager
+          - com.github.Bleuzen.FFaudioConverter
   - type: systemd
     system:
       enabled:
