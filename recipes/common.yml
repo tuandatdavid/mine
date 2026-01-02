@@ -91,6 +91,7 @@ modules:
           - com.heroicgameslauncher.hgl
           - org.prismlauncher.PrismLauncher
           - org.nicotine_plus.Nicotine
+          - io.anytype.anytype
   - type: systemd
     system:
       enabled:
@@ -118,6 +119,7 @@ modules:
   - type: script
     snippets:
       - "chmod +x /usr/bin/ugum"
+      - "chmod +x /usr/share/bash-prexec"
   - type: initramfs
   - type: os-release
     properties:
