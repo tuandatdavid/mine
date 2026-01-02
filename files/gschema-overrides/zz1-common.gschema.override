@@ -12,4 +12,4 @@ workspaces-only-on-primary=true
 focus-change-on-pointer-rest=true
 [org.gnome.shell]
 enabled-extensions = ['appindicatorsupport@rgcjonas.gmail.com','drive-menu@gnome-shell-extensions.gcampax.github.com', 'grand-theft-focus@zalckos.github.com', 'caffeine@patapon.info','tailscale-status@maxgallup.github.com', 'AlphabeticalAppGrid@stuarthayhurst', 'mediacontrols@cliffniff.github.com']
-favorite-apps =  ['org.gnome.Nautilus.desktop', 'org.gnome.Ptyxis.desktop', 'codium.desktop']
+favorite-apps =  ['app.zen_browser.zen.desktop', 'io.anytype.anytype.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Ptyxis.desktop', 'codium.desktop', 'io.github.shiftey.Desktop.desktop', 'org.gnome.Calendar.desktop', 'me.iepure.devtoolbox.desktop']
