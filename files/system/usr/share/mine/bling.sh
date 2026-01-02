@@ -21,7 +21,7 @@ if [ "$(command -v ug)" ]; then
     alias xzegrep='ug -zE'
     alias xzfgrep='ug -zF'
 fi
-
+eval -- "$(/home/linuxbrew/.linuxbrew/bin/starship init bash --print-full-init)"
 alias cd='z'
 
 if [ "$(basename "$SHELL")" = "bash" ]; then
