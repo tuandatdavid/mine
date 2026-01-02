@@ -13,6 +13,7 @@ modules:
       files:
         - codium.repo
         - gum.repo
+        - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
       copr:
         - ublue-os/packages
       nonfree: rpmfusion
