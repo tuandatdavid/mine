@@ -14,7 +14,10 @@ workspaces-only-on-primary=true
 focus-change-on-pointer-rest=true
 [org.gnome.shell]
 enabled-extensions = ['appindicatorsupport@rgcjonas.gmail.com','drive-menu@gnome-shell-extensions.gcampax.github.com', 'grand-theft-focus@zalckos.github.com', 'caffeine@patapon.info','tailscale-status@maxgallup.github.com', 'AlphabeticalAppGrid@stuarthayhurst', 'mediacontrols@cliffniff.github.com', 'battery-time@eetumos.github.com', 'gsconnect@andyholmes.github.io','fw-fanctrl-revived@willow.sh', 'Battery-Health-Charging@maniacx.github.com']
+favorite-apps =  ['app.zen_browser.zen.desktop', 'io.anytype.anytype.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Ptyxis.desktop', 'codium.desktop', 'io.github.shiftey.Desktop.desktop', 'org.gnome.Calendar.desktop', 'me.iepure.devtoolbox.desktop', 'au.stevetech.yafi.desktop']
 [org.gnome.desktop.interface]
 gtk-theme = 'adw-gtk3-dark'
 [org.gnome.desktop.wm.preferences]
 button-layout = 'appmenu:close'
+[org.gnome.login-screen]
+logo='/usr/share/mine/Framework_Computer_logo.png'
