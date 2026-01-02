@@ -23,9 +23,9 @@ modules:
           - org.gnome.PowerStats
   - type: gnome-extensions
     install:
-      - Framework Fan Control
-      - Battery Health Charging
-      - Battery Time
+      - 7864 # Framework Fan Control
+      - 5724 # Battery Health Charging
+      - 7999 # Battery Time
       - GSConnect
   - type: gschema-overrides
     include:
