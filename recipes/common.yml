@@ -13,7 +13,6 @@ modules:
       files:
         - codium.repo
         - gum.repo
-        - https://download.docker.com/linux/fedora/docker-ce.repo
       copr:
         - ublue-os/packages
       nonfree: rpmfusion
@@ -40,11 +39,6 @@ modules:
         - codium
         - uupd
         - waydroid
-        - docker-ce 
-        - docker-ce-cli
-        - containerd.io
-        - docker-buildx-plugin
-        - docker-compose-plugin
         - ptyxis
       exclude:
         - gnome-software
@@ -96,8 +90,8 @@ modules:
     system:
       enabled:
         - uupd.service
-        - docker.service
-        - docker.socket
+        - tailscaled.service
+        - podman.socket
       disabled:
         - rpm-ostreed-automatic.timer
         - bootc-fetch-apply-updates.timer
