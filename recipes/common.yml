@@ -41,6 +41,8 @@ modules:
         - waydroid
         - ptyxis
         - plymouth-plugin-script
+        - plymouth-scripts
+        - ImageMagick
       exclude:
         - gnome-software
     remove:
