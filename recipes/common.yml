@@ -118,8 +118,10 @@ modules:
     snippets:
       - "chmod +x /usr/bin/ugum"
       - "chmod +x /usr/share/bash-prexec"
+      - "rpm -i --nodigest $CONFIG_DIRECTORY/files/dnf/epson-inkjeet-printer-escpr-1.8.6-1.src.rpm"
     scripts:
       - plymouth.sh
+      - segoefont.sh
   - type: initramfs
   - type: os-release
     properties:
