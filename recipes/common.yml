@@ -40,6 +40,7 @@ modules:
         - uupd
         - waydroid
         - ptyxis
+        - plymouth-plugin-script
       exclude:
         - gnome-software
     remove:
@@ -114,6 +115,8 @@ modules:
     snippets:
       - "chmod +x /usr/bin/ugum"
       - "chmod +x /usr/share/bash-prexec"
+    scripts:
+      - plymouth.sh
   - type: initramfs
   - type: os-release
     properties:
