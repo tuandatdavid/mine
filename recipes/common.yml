@@ -99,6 +99,7 @@ modules:
         - uupd.service
         - tailscaled.service
         - podman.socket
+        - libvirtd.service
       disabled:
         - rpm-ostreed-automatic.timer
         - bootc-fetch-apply-updates.timer
