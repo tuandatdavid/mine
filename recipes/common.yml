@@ -92,6 +92,7 @@ modules:
           - io.anytype.anytype
           - org.virt_manager.virt-manager
           - com.github.Bleuzen.FFaudioConverter
+          - com.sindresorhus.Caprine
   - type: systemd
     system:
       enabled:
