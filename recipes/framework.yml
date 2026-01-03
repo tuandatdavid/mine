@@ -27,7 +27,6 @@ modules:
       - 7864 # Framework Fan Control
       - 5724 # Battery Health Charging
       - 7999 # Battery Time
-      - GSConnect
   - type: gschema-overrides
     include:
       - zz2-framework.gschema.override
