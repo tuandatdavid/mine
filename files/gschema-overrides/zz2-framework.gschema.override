@@ -19,5 +19,5 @@ favorite-apps =  ['app.zen_browser.zen.desktop', 'io.anytype.anytype.desktop', '
 gtk-theme = 'adw-gtk3-dark'
 [org.gnome.desktop.wm.preferences]
 button-layout = 'appmenu:close'
-[org.gnome.login-screen]
-logo='/usr/share/mine/Framework_Computer_logo.png'
+#[org.gnome.login-screen]
+#logo='/usr/share/mine/Framework_Computer_logo.png'
