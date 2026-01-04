@@ -16,6 +16,7 @@ modules:
         - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
       copr:
         - ublue-os/packages
+        - cuteneko/waydroid-helper
       nonfree: rpmfusion
     install:
       packages:
@@ -44,6 +45,7 @@ modules:
         - plymouth-plugin-script
         - plymouth-scripts
         - ImageMagick
+        - waydroid-helper
       exclude:
         - gnome-software
     remove:
