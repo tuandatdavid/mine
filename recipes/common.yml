@@ -46,6 +46,7 @@ modules:
         - plymouth-scripts
         - ImageMagick
         - waydroid-helper
+        - wl-clipboard
       exclude:
         - gnome-software
     remove:
@@ -108,7 +109,7 @@ modules:
   - type: gnome-extensions
     install:
       - AppIndicator and KStatusNotifierItem Support
-      - 5112 # Tailscale Status
+#      - 5112 # Tailscale Status
       - 4470 # Media Controls
       - Grand Theft Focus
       - Removable Drive Menu
