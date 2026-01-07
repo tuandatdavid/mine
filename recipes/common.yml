@@ -21,6 +21,7 @@ modules:
     install:
       packages:
         - gum
+        - iwd
         - gnome-shell
         - nautilus
         - tuned
