@@ -126,8 +126,8 @@ modules:
     snippets:
       - "chmod +x /usr/bin/ugum"
       - "chmod +x /usr/share/bash-prexec"
-      - "rpm -i --nodigest $CONFIG_DIRECTORY/dnf/epson-inkjet-printer-escpr-1.8.6-1.src.rpm"
-      - "rpm -i --nodigest $CONFIG_DIRECTORY/dnf/epson-printer-utility-1.2.2-1.x86_64.rpm"
+  #    - "rpm -i --nodigest $CONFIG_DIRECTORY/dnf/epson-inkjet-printer-escpr-1.8.6-1.src.rpm"
+    #  - "rpm -i --nodigest $CONFIG_DIRECTORY/dnf/epson-printer-utility-1.2.2-1.x86_64.rpm"
     scripts:
       - plymouth.sh
       - segoefont.sh
