@@ -49,6 +49,8 @@ modules:
         - waydroid-helper
         - wl-clipboard
         - gnome-disk-utility
+        - nautilus-python
+        - python-dbus
       exclude:
         - gnome-software
     remove:
