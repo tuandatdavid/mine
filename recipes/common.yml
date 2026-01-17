@@ -48,6 +48,7 @@ modules:
         - ImageMagick
         - waydroid-helper
         - wl-clipboard
+        - gnome-disk-utility
       exclude:
         - gnome-software
     remove:
