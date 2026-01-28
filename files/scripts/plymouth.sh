@@ -34,7 +34,7 @@ global.UseShadow = 1;
 // Change the background of the shutdown screen.
 // vista - Use Vista background and branding.
 // 7 - Use 7 background and branding.
-global.AuthuiStyle = "7";
+global.AuthuiStyle = "vista";
 EOF
 
 
@@ -42,7 +42,7 @@ EOF
 # "1 - Automatic (Fade when shutdown is called from your desktop, don't fade when shutdown is called from SDDM)"
 # "2 - Always (Fade when shutdown is called from your desktop, fade when shutdown is called from SDDM)"
 # "3 - Never (Don't fade when shutdown is called from your desktop, don't fade when shutdown is called from SDDM)"
-INPUT=2
+INPUT=3
 
 if [[ $INPUT != 1 ]] && [[ $INPUT != 2 ]] then
     $INPUT = 0;
