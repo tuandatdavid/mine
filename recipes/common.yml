@@ -14,7 +14,7 @@ modules:
         - codium.repo
         - gum.repo
         - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
-        - https://docs.docker.com/engine/install/fedora/
+        - https://download.docker.com/linux/fedora/docker-ce.repo
       copr:
         - ublue-os/packages
         - cuteneko/waydroid-helper
