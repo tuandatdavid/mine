@@ -48,7 +48,7 @@ modules:
         - ImageMagick
         - waydroid-helper
         - wl-clipboard
-        - gnome-disk-utility
+        - gparted
         - nautilus-python
         - python-dbus
       exclude:
