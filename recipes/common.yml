@@ -14,6 +14,7 @@ modules:
         - codium.repo
         - gum.repo
         - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
+        - https://docs.docker.com/engine/install/fedora/
       copr:
         - ublue-os/packages
         - cuteneko/waydroid-helper
@@ -51,6 +52,11 @@ modules:
         - gparted
         - nautilus-python
         - python-dbus
+        - docker-ce
+        - docker-ce-cli
+        - containerd.io
+        - docker-buildx-plugin
+        - docker-compose-plugin
       exclude:
         - gnome-software
     remove:
@@ -105,7 +111,7 @@ modules:
       enabled:
         - uupd.service
         - tailscaled.service
-        - podman.socket
+        - docker.service
         - libvirtd.service
       disabled:
         - rpm-ostreed-automatic.timer
