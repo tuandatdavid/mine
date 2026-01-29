@@ -13,6 +13,7 @@ modules:
         - framework-system
         - powertop
         - gtkpod
+        - dosfstools
   - type: default-flatpaks
     configurations:
       - scope: system
