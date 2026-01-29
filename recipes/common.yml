@@ -57,6 +57,7 @@ modules:
         - containerd.io
         - docker-buildx-plugin
         - docker-compose-plugin
+        - gnome-disk-utility
       exclude:
         - gnome-software
     remove:
