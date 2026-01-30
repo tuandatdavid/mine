@@ -22,7 +22,7 @@ for pkg in kernel kernel-core kernel-modules kernel-modules-core; do
 done
 rm -rf "/usr/lib/modules/$(ls /usr/lib/modules | head -n1)"
 rm -rf /boot/*
-
+dnf5 -y copr enable bieszczaders/kernel-cachyos-lto
 dnf5 -y install "${packages[@]}"
 dnf5 versionlock add "${packages[@]}"
 
