@@ -30,15 +30,15 @@ jobs:
           - recipe.yml
           - recipe-framework.yml
     steps:
-      - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
-        with:
-          persist-credentials: false
+#      - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
+#        with:
+#          persist-credentials: false
       # the build is fully handled by the reusable github action
       - name: Extract kernel key
         shell: bash
         env:
           KERNEL_SIGNING_SECRET: ${{ secrets.KERNEL_SIGNING_SECRET }}
-        run: pwd && echo "${KERNEL_SIGNING_SECRET}" | base64 -d > ./MOK.priv
+        run: pwd && echo "${KERNEL_SIGNING_SECRET}" | base64 -d > ./mok.priv
 
       - name: Build Custom Image
         uses: blue-build/github-action@v1.11
