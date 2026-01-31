@@ -7,7 +7,8 @@
 
 set -euo pipefail
 
-KERNEL_VERSION="$(uname -r)"
+KERNEL_VERSION="$(rpm -q "kernel-cachyos-lto" --queryformat '%{VERSION}-%{RELEASE}.%{ARCH}'
+)"
 
 PUBLIC_KEY_DER_PATH="/etc/pki/akmods/certs/akmods-blue-build.der"
 PUBLIC_KEY_CRT_PATH="./public_key.crt"
