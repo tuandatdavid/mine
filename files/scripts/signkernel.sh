@@ -16,7 +16,7 @@
 set -oue pipefail
 
 KERNEL_VERSION="$(rpm -q "kernel" --queryformat '%{VERSION}-%{RELEASE}.%{ARCH}')"
-
+PUBLIC_KEY_DER_PATH="./files/system/etc/pki/akmods/certs/akmods-blue-build.der"
 PUBLIC_KEY_CRT_PATH="/tmp/certs/public_key.crt"
 PRIVATE_KEY_PATH="/tmp/certs/private_key.priv"
 
