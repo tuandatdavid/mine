@@ -142,8 +142,6 @@ modules:
       - cachy-kernel.sh
       - plymouth.sh
       - segoefont.sh
-  - type: script
-    scripts:
       - signkernel.sh
   - type: initramfs
     env:
