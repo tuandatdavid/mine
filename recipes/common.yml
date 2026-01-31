@@ -142,7 +142,15 @@ modules:
       - cachy-kernel.sh
       - plymouth.sh
       - segoefont.sh
+  - type: script
+    scripts:
       - signkernel.sh
+    secrets:
+      - type: env
+        name: KERNEL_PRIVKEY
+        mount:
+          type: file
+          destination: /tmp/certs/private_key.priv
   - type: initramfs
     env:
       DRACUT_NO_XATTR: '1'
