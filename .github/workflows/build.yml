@@ -34,11 +34,12 @@ jobs:
         with:
           persist-credentials: false
       # the build is fully handled by the reusable github action
-      - name: Extract kernel key
+      - name: Retrieve Signing Key
         shell: bash
         env:
-          KERNEL_SIGNING_SECRET: ${{ secrets.KERNEL_SIGNING_SECRET }}
-        run: pwd && echo "${KERNEL_SIGNING_SECRET}" | base64 -d > ./MOK.priv && ls -l
+          KERNEL_PRIVKEY: ${{ secrets.KERNEL_SIGNING_SECRET }}
+        run: |
+          echo "${KERNEL_PRIVKEY}" > /tmp/certs/private_key.priv
 
       - name: Build Custom Image
         uses: blue-build/github-action@v1.11
