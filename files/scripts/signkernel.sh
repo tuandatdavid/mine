@@ -9,8 +9,8 @@ set -euo pipefail
 
 KERNEL_VERSION="$(uname -r)"
 
-PUBLIC_KEY_DER_PATH="../system/etc/pki/akmods/certs/akmods-blue-build.der"
-PUBLIC_KEY_CRT_PATH="./public_key.crt"
+PUBLIC_KEY_DER_PATH="./system/etc/pki/akmods/certs/akmods-blue-build.der"
+PUBLIC_KEY_CRT_PATH="/tmp/certs/public_key.crt"
 PRIVATE_KEY_PATH="/tmp/certs/private_key.priv"
 
 openssl x509 -in "$PUBLIC_KEY_DER_PATH" -out "$PUBLIC_KEY_CRT_PATH"
