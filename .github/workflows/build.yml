@@ -39,7 +39,7 @@ jobs:
         env:
           KERNEL_PRIVKEY: ${{ secrets.KERNEL_SIGNING_SECRET }}
         run: |
-          mkdir /tmp/certs && echo "${KERNEL_PRIVKEY}" > /tmp/certs/private_key.priv
+          echo "${KERNEL_PRIVKEY}" > ./private_key.priv
 
       - name: Build Custom Image
         uses: blue-build/github-action@v1.11
