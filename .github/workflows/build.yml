@@ -38,7 +38,7 @@ jobs:
         shell: bash
         env:
           KERNEL_SIGNING_SECRET: ${{ secrets.KERNEL_SIGNING_SECRET }}
-        run: pwd && echo "${KERNEL_SIGNING_SECRET}" | base64 -d > /home/runner/work/mine/mine/MOK.priv
+        run: pwd && echo "${KERNEL_SIGNING_SECRET}" | base64 -d > ./MOK.priv
 
       - name: Build Custom Image
         uses: blue-build/github-action@v1.11
