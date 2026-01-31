@@ -147,7 +147,7 @@ modules:
       PUBLIC_KEY_DER_PATH: /etc/pki/akmods/certs/akmods-blue-build.der
     secrets:
       - type: file
-        source: ./MOK.priv
+        source: /home/runner/work/mine/mine/MOK.priv
         mount: 
           type: file
           destination: /tmp/certs/private_key.priv
