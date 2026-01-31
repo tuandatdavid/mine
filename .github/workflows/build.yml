@@ -34,12 +34,12 @@ jobs:
         with:
           persist-credentials: false
       # the build is fully handled by the reusable github action
-      - name: Retrieve Signing Key
-        shell: bash
-        env:
-          KERNEL_PRIVKEY: ${{ secrets.KERNEL_SIGNING_SECRET }}
-        run: |
-          echo "${KERNEL_PRIVKEY}" > ./private_key.priv
+#      - name: Retrieve Signing Key
+#        shell: bash
+#        env:
+#          KERNEL_PRIVKEY: ${{ secrets.KERNEL_SIGNING_SECRET }}
+#        run: |
+#          echo "${KERNEL_PRIVKEY}" > ./private_key.priv
 
       - name: Build Custom Image
         uses: blue-build/github-action@v1.11
@@ -48,6 +48,8 @@ jobs:
           cosign_private_key: ${{ secrets.SIGNING_SECRET }}
           registry_token: ${{ github.token }}
           pr_event_number: ${{ github.event.number }}
+        env: 
+          KERNEL_PRIVKEY: ${{ secrets.KERNEL_SIGNING_SECRET }}
 
           # enabled by default, disable if your image is small and you want faster builds
           maximize_build_space: true
