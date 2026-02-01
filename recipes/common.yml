@@ -58,6 +58,7 @@ modules:
         - docker-buildx-plugin
         - docker-compose-plugin
         - gnome-disk-utility
+        - firewall-config
       exclude:
         - gnome-software
     remove:
