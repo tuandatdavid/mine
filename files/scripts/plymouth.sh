@@ -24,7 +24,7 @@ bash ./gen_blur.sh
 // Use Vista boot which is available even on Windows 11.
 // 1 - Use Vista boot screen
 // 0 - Use 7 boot screen
-global.UseLegacyBootScreen = 1;
+global.UseLegacyBootScreen = 0;
 
 // Add shadow effect to shutdown screen text.
 // 0 - Windows Vista style, no text shadow.
