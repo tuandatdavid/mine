@@ -2,7 +2,8 @@ modules:
   - type: signing
   - type: brew
     nofile-limits: true # increase nofile limits
-    brew-analytics: false # disable telemetry
+    brew-analytics: false
+    direct-pull: true # dont pull caches
   - type: files
     files:
       - source: system   # copies `files/system/*` (* means everything inside it) into your image's root folder `/`
