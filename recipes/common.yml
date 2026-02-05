@@ -137,6 +137,16 @@ modules:
   - type: custom-kernel
     source: local
     kernel: cachyos-lto
+    sign:
+      key: /tmp/certs/private_key.priv
+      mok-password: bluebuild
+      mok-issuer: tuandatdavid/David
+    secrets:
+      - type: env
+        name: KERNEL_PRIVKEY
+        mount:
+          type: file
+          destination: /tmp/certs/private_key.priv
   - type: script
     snippets:
       - "chmod +x /usr/bin/ugum"
@@ -147,15 +157,6 @@ modules:
 #      - cachy-kernel.sh
       - plymouth.sh
       - segoefont.sh
-  - type: script
-    scripts:
-      - signkernel.sh
-    secrets:
-      - type: env
-        name: KERNEL_PRIVKEY
-        mount:
-          type: file
-          destination: /tmp/certs/private_key.priv
   - type: initramfs
     env:
       DRACUT_NO_XATTR: '1'
