@@ -134,6 +134,9 @@ modules:
   - type: justfiles
     validate: true
     install: true
+  - type: custom-kernel
+    source: local
+    kernel: cachyos-lto
   - type: script
     snippets:
       - "chmod +x /usr/bin/ugum"
@@ -141,10 +144,10 @@ modules:
   #    - "rpm -i --nodigest $CONFIG_DIRECTORY/dnf/epson-inkjet-printer-escpr-1.8.6-1.src.rpm"
     #  - "rpm -i --nodigest $CONFIG_DIRECTORY/dnf/epson-printer-utility-1.2.2-1.x86_64.rpm"
     scripts:
-      - cachy-kernel.sh
+#      - cachy-kernel.sh
       - plymouth.sh
       - segoefont.sh
-  - type: script
+  - type: scripts
     scripts:
       - signkernel.sh
     secrets:
