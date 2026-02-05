@@ -147,7 +147,7 @@ modules:
 #      - cachy-kernel.sh
       - plymouth.sh
       - segoefont.sh
-  - type: scripts
+  - type: script
     scripts:
       - signkernel.sh
     secrets:
