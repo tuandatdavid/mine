@@ -134,7 +134,7 @@ modules:
   - type: justfiles
     validate: true
     install: true
-  - type: script@v1
+  - type: script
     snippets:
       - "chmod +x /usr/bin/ugum"
       - "chmod +x /usr/share/bash-prexec"
