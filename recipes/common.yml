@@ -74,6 +74,7 @@ modules:
         - htop
         - btop
         - libfdk-aac
+        - zram-generator-defaults
   - type: default-flatpaks
     configurations:
       - notify: true
