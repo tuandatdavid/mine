@@ -19,6 +19,7 @@ modules:
       copr:
         - ublue-os/packages
         - cuteneko/waydroid-helper
+        - bieszczaders/kernel-cachyos-addons
       nonfree: rpmfusion
     install:
       packages:
@@ -60,6 +61,9 @@ modules:
         - docker-compose-plugin
         - gnome-disk-utility
         - firewall-config
+        - cachyos-settings
+        - cachyos-ksm-settings
+        - scx-scheds
       exclude:
         - gnome-software
     remove:
