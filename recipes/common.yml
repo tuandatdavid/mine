@@ -54,11 +54,11 @@ modules:
         - gparted
         - nautilus-python
         - python-dbus
-        - docker-ce
-        - docker-ce-cli
-        - containerd.io
-        - docker-buildx-plugin
-        - docker-compose-plugin
+#        - docker-ce
+#        - docker-ce-cli
+#        - containerd.io
+#        - docker-buildx-plugin
+#        - docker-compose-plugin
         - gnome-disk-utility
         - firewall-config
         - cachyos-settings
