@@ -14,3 +14,4 @@ image-version: 43 # latest is also supported if you want new updates ASAP
 modules:
   - from-file: common.yml
   - from-file: framework.yml
+  - from-file: docker.yml
