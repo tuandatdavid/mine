@@ -141,7 +141,7 @@ modules:
     install: true
   - type: custom-kernel
     source: local
-    kernel: cachyos-lto
+    kernel: cachyos-lts-lto
   - type: script
     snippets:
       - "chmod +x /usr/bin/ugum"
