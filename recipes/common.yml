@@ -64,12 +64,9 @@ modules:
         - cachyos-settings
         - cachyos-ksm-settings
         - scx-scheds
-      exclude:
-        - gnome-software
     remove:
       auto-remove: false
       packages:
-        - gnome-software
         - nvtop
         - htop
         - btop
@@ -95,7 +92,6 @@ modules:
           - io.github.celluloid_player.Celluloid
           - com.mattjakeman.ExtensionManager
           - io.bassi.Amberol
-          - io.github.kolunmi.Bazaar
           - org.gnome.TextEditor
           - com.github.wwmm.easyeffects
           - org.pipewire.Helvum
