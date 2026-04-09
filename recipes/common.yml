@@ -26,6 +26,7 @@ modules:
         - gum
         - iwd
         - gnome-shell
+        - gnome-software
         - nautilus
         - tuned
         - tuned-ppd
