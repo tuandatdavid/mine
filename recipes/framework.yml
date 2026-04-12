@@ -4,7 +4,6 @@ modules:
       cleanup: true
       copr:
         - zktaiga/fw-fanctrl
-        - shdwchn10/xpadneo
       files:
         - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
     install:
@@ -15,7 +14,6 @@ modules:
         - powertop
         - gtkpod
         - dosfstools
-        - xpadneo
   - type: default-flatpaks
     configurations:
       - scope: system
