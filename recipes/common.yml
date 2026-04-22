@@ -125,7 +125,7 @@ modules:
     install:
       - AppIndicator and KStatusNotifierItem Support
 #      - 5112 # Tailscale Status
-      - 4470 # Media Controls
+#      - 4470 # Media Controls
 #      - Grand Theft Focus
 #      - Removable Drive Menu
       - 4269 # Alphabetical app grid
