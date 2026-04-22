@@ -55,6 +55,7 @@ modules:
         - gparted
         - nautilus-python
         - python-dbus
+        - sbsigntools
 #        - docker-ce
 #        - docker-ce-cli
 #        - containerd.io
