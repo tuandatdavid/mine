@@ -8,7 +8,7 @@ modules:
       install-weak-deps: false
       packages:
         - netbird
-        - netbird-ui
+#        - netbird-ui
   - type: signing
   - type: brew
     nofile-limits: true # increase nofile limits
