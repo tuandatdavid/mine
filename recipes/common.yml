@@ -122,7 +122,8 @@ modules:
     system:
       enabled:
         - uupd.service
-        - tailscaled.service
+        - netbird.service
+#        - tailscaled.service
  #       - docker.service
         - libvirtd.service
       disabled:
