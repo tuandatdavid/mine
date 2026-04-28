@@ -1,4 +1,11 @@
 modules:
+  - type: rpm-ostree
+    repos:
+      - netbird.repo
+    install:
+      - netbird
+      - netbird-ui
+      - gnome-shell-extension-appindicator
   - type: signing
   - type: brew
     nofile-limits: true # increase nofile limits
