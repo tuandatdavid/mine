@@ -1,14 +1,4 @@
 modules:
-  - type: dnf
-    repos:
-      cleanup: true
-      files:
-        - netbird.repo
-    install:
-      install-weak-deps: false
-      packages:
-        - netbird
-#        - netbird-ui
   - type: signing
   - type: brew
     nofile-limits: true # increase nofile limits
