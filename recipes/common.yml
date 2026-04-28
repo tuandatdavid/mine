@@ -5,6 +5,7 @@ modules:
       files:
         - netbird.repo
     install:
+      install-weak-deps: false
       packages:
         - netbird
         - netbird-ui
