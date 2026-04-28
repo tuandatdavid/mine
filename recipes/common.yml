@@ -10,8 +10,9 @@ modules:
         destination: /
   - type: dnf
     repos:
-      cleanup: true
+      cleanup: false
       files:
+        - netbird.repo
         - codium.repo
         - gum.repo
         - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
