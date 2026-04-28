@@ -16,6 +16,7 @@ modules:
         - gum.repo
         - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
         - https://download.docker.com/linux/fedora/docker-ce.repo
+        - netbird.repo
       copr:
         - ublue-os/packages
         - cuteneko/waydroid-helper
@@ -23,6 +24,9 @@ modules:
       nonfree: rpmfusion
     install:
       packages:
+        - netbird
+        - netbird-ui
+        - gnome-shell-extension-appindicator
         - gum
         - iwd
         - gnome-shell
