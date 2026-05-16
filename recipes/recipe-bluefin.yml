@@ -1,0 +1,105 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
+# image will be published to ghcr.io/<user>/<name>
+name: bluefin-cachy
+# description will be included in the image's metadata
+description: My customized Universal Blue Bluefin image.
+
+# the base image to build on top of (FROM) and the version tag to use
+base-image: ghcr.io/ublue-os/bluefin
+image-version: latest # latest is also supported if you want new updates ASAP
+
+# module configuration, executed in order
+# you can include multiple instances of the same module
+modules:
+  - type: dnf
+    repos:
+      cleanup: false
+      files:
+        - codium.repo
+        - gum.repo
+        - https://download.docker.com/linux/fedora/docker-ce.repo
+      copr:
+        - ublue-os/packages
+        - cuteneko/waydroid-helper
+        - bieszczaders/kernel-cachyos-addons
+      nonfree: rpmfusion
+    install:
+      packages:
+        - adw-gtk3-theme
+        - libvirt-daemon-config-network
+        - libvirt-daemon-kvm
+        - qemu-kvm
+        - libguestfs-tools
+        - python3-libguestfs
+        - steam # just like on bazzite
+        - codium
+        - waydroid
+        - ptyxis
+        - plymouth-plugin-script
+        - plymouth-scripts
+        - ImageMagick
+        - waydroid-helper
+        - wl-clipboard
+        - gparted
+        - nautilus-python
+        - python-dbus
+        - cachyos-settings
+        - cachyos-ksm-settings
+        - scx-scheds
+  - type: dnf
+    repos:
+      cleanup: true
+      copr:
+        - zktaiga/fw-fanctrl
+      files:
+        - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
+    install:
+      packages:
+        - fw-fanctrl
+        - fw-ectool
+        - framework-system
+        - powertop
+        - gtkpod
+  - type: default-flatpaks
+    configurations:
+      - scope: system
+        repo:
+          title: Flathub
+        install: # system flatpaks we want all users to have and not remove
+          - au.stevetech.yafi
+          - org.gnome.Firmware
+          - org.easycoding.TunedSwitcher
+          - org.gnome.PowerStats
+  - type: gnome-extensions
+    install:
+      - 7864 # Framework Fan Control
+      - 5724 # Battery Health Charging
+      - 7999 # Battery Time
+  - type: gschema-overrides
+    include:
+      - zz2-framework.gschema.override
+  - type: custom-kernel
+    source: local
+    kernel: cachyos-lto
+  - type: script
+    scripts:
+      - signkernel.sh
+    secrets:
+      - type: env
+        name: KERNEL_PRIVKEY
+        mount:
+          type: file
+          destination: /tmp/certs/private_key.priv
+#  - type: script
+#    snippets:
+#      - "plymouth-set-default-theme framework"
+  - type: rpm-ostree
+    repos:
+      - netbird.repo
+    install:
+      - netbird
+      - netbird-ui
+      - gnome-shell-extension-appindicator
+  - type: initramfs
+  - type: signing
