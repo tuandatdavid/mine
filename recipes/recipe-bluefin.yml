@@ -48,8 +48,6 @@ modules:
         - qemu-kvm
         - libguestfs-tools
         - steam # just like on bazzite
-        - fdk-aac 
-        - fdk-aac.i686
         - python3-libguestfs
         - codium
         - waydroid
