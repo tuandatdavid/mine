@@ -15,6 +15,10 @@ modules:
   - type: custom-kernel
     source: local
     kernel: cachyos-lto
+  - type: files
+    files:
+      - source: system/etc   # copies `files/system/etc` (etc means etc inside it) into your image's /etc folder `/etc`
+        destination: /etc
   - type: script
     scripts:
       - signkernel.sh
