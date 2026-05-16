@@ -1,3 +1,5 @@
+# vim: set ft=make :
+
 spicetify:
     #!/usr/bin/bash
     cd /var/tmp
