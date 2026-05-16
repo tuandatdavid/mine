@@ -39,6 +39,7 @@ modules:
         - ublue-os/packages
         - cuteneko/waydroid-helper
         - bieszczaders/kernel-cachyos-addons
+        - trixieua/morewaita-icon-theme
     install:
       allow-erasing: true
       packages:
@@ -64,6 +65,7 @@ modules:
         - cachyos-ksm-settings
         - scx-scheds
         - papirus-icon-theme
+        - morewaita-icon-theme
     remove:
       packages:
        - zram-generator-defaults
