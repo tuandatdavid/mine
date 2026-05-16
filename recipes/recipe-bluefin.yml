@@ -101,7 +101,7 @@ modules:
     install:
       - 7864 # Framework Fan Control
       - 5724 # Battery Health Charging
-      - 7999 # Battery Time
+      - 1475 # Battery Time
   - type: gschema-overrides
     include:
       - zz2-framework.gschema.override
