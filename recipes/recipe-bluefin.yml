@@ -83,6 +83,7 @@ modules:
         - fw-ectool
         - powertop
         - gtkpod
+        - framework-system
   - type: default-flatpaks
     configurations:
       - scope: system
