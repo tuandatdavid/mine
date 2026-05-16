@@ -83,7 +83,6 @@ modules:
       packages:
         - fw-fanctrl
         - fw-ectool
-        - framework-system
         - powertop
         - gtkpod
   - type: default-flatpaks
