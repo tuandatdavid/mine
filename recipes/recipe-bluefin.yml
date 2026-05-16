@@ -64,7 +64,6 @@ modules:
         - cachyos-ksm-settings
         - scx-scheds
         - papirus-icon-theme
-        - arc-theme
     remove:
       packages:
        - zram-generator-defaults
