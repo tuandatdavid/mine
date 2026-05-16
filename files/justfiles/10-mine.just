@@ -183,14 +183,6 @@ distrobox-assemble CONTAINER="prompt" ACTION="create" FILE="/etc/distrobox/distr
     source /usr/lib/ujust/ujust.sh
     AssembleList {{ FILE }} {{ ACTION }} {{ CONTAINER }}
 
-spicetify:
-    #!/usr/bin/bash
-    cd /var/tmp
-    git clone https://github.com/boudywho/easy-spicetify-arch.git
-    cd easy-spicetify-arch
-    chmod +x spicetify.sh
-    ./spicetify.sh
-
 toggle-iwd:
     #!/usr/bin/bash
     echo -e "This script manages enabling or disabling iwd as a replacement for wpa_supplicant for Wi-Fi networking."

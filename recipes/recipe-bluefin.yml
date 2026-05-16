@@ -12,6 +12,18 @@ image-version: latest # latest is also supported if you want new updates ASAP
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
+  - type: custom-kernel
+    source: local
+    kernel: cachyos-lto
+  - type: script
+    scripts:
+      - signkernel.sh
+    secrets:
+      - type: env
+        name: KERNEL_PRIVKEY
+        mount:
+          type: file
+          destination: /tmp/certs/private_key.priv
   - type: dnf
     repos:
       cleanup: false
@@ -25,14 +37,17 @@ modules:
         - bieszczaders/kernel-cachyos-addons
       nonfree: rpmfusion
     install:
+      allow-erasing: true
       packages:
         - adw-gtk3-theme
         - libvirt-daemon-config-network
         - libvirt-daemon-kvm
         - qemu-kvm
         - libguestfs-tools
-        - python3-libguestfs
         - steam # just like on bazzite
+        - fdk-aac 
+        - fdk-aac.i686
+        - python3-libguestfs
         - codium
         - waydroid
         - ptyxis
@@ -47,6 +62,13 @@ modules:
         - cachyos-settings
         - cachyos-ksm-settings
         - scx-scheds
+    remove:
+      packages:
+       - zram-generator-defaults
+  - type: justfiles
+    validate: true
+    include:
+      - 20-spicetify.just
   - type: dnf
     repos:
       cleanup: true
@@ -79,18 +101,6 @@ modules:
   - type: gschema-overrides
     include:
       - zz2-framework.gschema.override
-  - type: custom-kernel
-    source: local
-    kernel: cachyos-lto
-  - type: script
-    scripts:
-      - signkernel.sh
-    secrets:
-      - type: env
-        name: KERNEL_PRIVKEY
-        mount:
-          type: file
-          destination: /tmp/certs/private_key.priv
 #  - type: script
 #    snippets:
 #      - "plymouth-set-default-theme framework"
