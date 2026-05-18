@@ -7,14 +7,14 @@ power-button-action='suspend'
 color-scheme = 'prefer-dark'
 [org.gnome.mutter]
 attach-modal-dialogs=true
-experimental-features = ['xwayland-native-scaling', 'autoclose-xwayland']
+experimental-features = ['autoclose-xwayland']
 edge-tiling=true
 dynamic-workspaces=true
 workspaces-only-on-primary=true
 focus-change-on-pointer-rest=true
 [org.gnome.shell]
-enabled-extensions = ['appindicatorsupport@rgcjonas.gmail.com','drive-menu@gnome-shell-extensions.gcampax.github.com', 'grand-theft-focus@zalckos.github.com', 'caffeine@patapon.info','tailscale-status@maxgallup.github.com', 'AlphabeticalAppGrid@stuarthayhurst', 'mediacontrols@cliffniff.github.com', 'battery-time@eetumos.github.com', 'gsconnect@andyholmes.github.io','fw-fanctrl-revived@willow.sh', 'Battery-Health-Charging@maniacx.github.com']
-favorite-apps =  ['app.zen_browser.zen.desktop', 'io.anytype.anytype.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Ptyxis.desktop', 'codium.desktop', 'io.github.shiftey.Desktop.desktop', 'org.gnome.Calendar.desktop', 'me.iepure.devtoolbox.desktop', 'au.stevetech.yafi.desktop']
+enabled-extensions = ['appindicatorsupport@rgcjonas.gmail.com', 'fw-fanctrl-revived@willow.sh', 'quick-settings-tweaks@qwreey', 'just-perfection-desktop@just-perfection', 'quick-settings-resolution-and-refresh-rate@rukins.github.io', 'quick-settings-audio-panel@rayzeq.github.io', 'hibernate-status@dromi', 'tilingshell@ferrarodomenico.com', 'dash-in-panel@fthx', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'auto-power-profile@dmy3k.github.io', 'grand-theft-focus@zalckos.github.com', 'gsconnect@andyholmes.github.io', 'caffeine@patapon.info', 'tailscale@joaophi.github.com', 'tailscale-status@maxgallup.github.com', 'add-to-steam@pupper.space', 'battery-time@eetumos.github.com', 'burn-my-windows@schneegans.github.com', 'mediacontrols@cliffniff.github.com', 'bazaar-integration@kolunmi.github.io', 'logomenu@aryan_k', 'AlphabeticalAppGrid@stuarthayhurst', 'Battery-Health-Charging@maniacx.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'blur-my-shell@aunetx', 'batime@martin.zurowietz.de', 'advanced-media-controller@sanjai.com']
+favorite-apps =  ['app.zen_browser.zen.desktop', 'md.obsidian.Obsidian.desktop', 'ai.jan.Jan.desktop', 'org.gnome.Ptyxis.desktop', 'org.gnome.Nautilus.desktop', 'com.spotify.Client.desktop', 'codium.desktop', 'me.iepure.devtoolbox.desktop', 'org.gnome.Builder.desktop', 'ar.xjuan.Cambalache.desktop', 'io.github.shiftey.Desktop.desktop']
 [org.gnome.desktop.interface]
 gtk-theme = 'adw-gtk3-dark'
 [org.gnome.desktop.wm.preferences]
