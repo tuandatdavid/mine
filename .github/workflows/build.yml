@@ -59,7 +59,7 @@ jobs:
 
   generate-release:
     name: Generate Release
-    needs: [build-image-stable]
+    needs: [bluebuild]
     permissions:
       contents: write
     secrets: inherit
