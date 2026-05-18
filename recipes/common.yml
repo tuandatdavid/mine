@@ -71,6 +71,8 @@ modules:
         - firewall-config
         - cachyos-settings
         - cachyos-ksm-settings
+        - scx-manager
+        - scx-tools
         - scx-scheds
         - papirus-icon-theme
     remove:
