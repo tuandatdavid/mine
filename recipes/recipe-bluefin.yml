@@ -64,6 +64,8 @@ modules:
         - cachyos-settings
         - cachyos-ksm-settings
         - scx-scheds
+        - scx-manager
+        - scx-tools
         - papirus-icon-theme
         - morewaita-icon-theme
     remove:
