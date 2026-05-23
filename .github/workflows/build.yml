@@ -57,12 +57,12 @@ jobs:
           build_chunked_oci: false
           max_layers: 64
 
-  generate-release:
-    name: Generate Release
-    needs: [bluebuild]
-    permissions:
-      contents: write
-    secrets: inherit
-    uses: ./.github/workflows/generate-release.yml
-    with:
-      stream_name: '["latest"]'
+#  generate-release:
+#    name: Generate Release
+#    needs: [bluebuild]
+#    permissions:
+#      contents: write
+#    secrets: inherit
+#    uses: ./.github/workflows/generate-release.yml
+#    with:
+#      stream_name: '["latest"]'
