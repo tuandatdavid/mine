@@ -75,6 +75,7 @@ modules:
         - scx-tools
         - scx-scheds
         - papirus-icon-theme
+        - libav-util
     remove:
       auto-remove: false
       packages:
