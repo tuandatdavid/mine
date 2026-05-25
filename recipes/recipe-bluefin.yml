@@ -68,6 +68,8 @@ modules:
         - scx-tools
         - papirus-icon-theme
         - morewaita-icon-theme
+        - nextcloud-client
+        - nextcloud-client-nautilus
     remove:
       packages:
        - zram-generator-defaults
