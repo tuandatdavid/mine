@@ -3,7 +3,7 @@
 spicetify:
     #!/usr/bin/bash
     cd /var/tmp
-    git clone https://github.com/boudywho/easy-spicetify-arch.git
+    git clone https://github.com/boudywho/easy-spicetify-linux.git
     cd easy-spicetify-arch
-    chmod +x spicetify.sh
-    ./spicetify.sh
+    chmod +x universal-spicetify.sh
+    ./universal-spicetify.sh
