@@ -26,7 +26,7 @@ modules:
         - ublue-os/packages
         - cuteneko/waydroid-helper
         - bieszczaders/kernel-cachyos-addons
-      nonfree: rpmfusion
+#      nonfree: rpmfusion
     install:
       packages:
         - gum
