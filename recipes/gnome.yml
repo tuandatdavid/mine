@@ -1,0 +1,60 @@
+modules:
+  - type: gnome-extensions
+    install:
+      - AppIndicator and KStatusNotifierItem Support
+#      - 5112 # Tailscale Status
+#      - 4470 # Media Controls
+#      - Grand Theft Focus
+#      - Removable Drive Menu
+      - 4269 # Alphabetical app grid
+      - Caffeine
+  - type: gschema-overrides
+    include:
+      - zz1-common.gschema.override
+  - type: default-flatpaks
+    configurations:
+      - notify: true
+        scope: system
+        repo:
+          title: Flathub
+        install:
+          - org.gnome.Calendar
+          - org.gnome.SoundRecorder
+          - io.bassi.Amberol
+  - type: dnf
+    repos:
+      cleanup: true
+      files:
+        - codium.repo
+        - gum.repo
+#        - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
+        - https://download.docker.com/linux/fedora/docker-ce.repo
+      copr:
+        - ublue-os/packages
+        - cuteneko/waydroid-helper
+        - bieszczaders/kernel-cachyos-addons
+        - trixieua/morewaita-icon-theme
+      nonfree: rpmfusion
+    install:
+      packages:
+        - gnome-shell
+        - gnome-shell-extension-appindicator
+        - gnome-software
+        - adw-gtk3-theme
+        - fdk-aac 
+        - fdk-aac.i686
+        - ptyxis
+        - gparted
+        - nautilus-python
+        - python-dbus
+        - sbsigntools
+        - gnome-disk-utility
+        - morewaita-icon-theme
+    remove:
+      auto-remove: false
+      packages:
+        - nvtop
+        - htop
+        - btop
+        - libfdk-aac
+        - zram-generator-defaults

@@ -5,7 +5,6 @@ modules:
     install:
       - netbird
       - netbird-ui
-      - gnome-shell-extension-appindicator
   - type: signing
   - type: brew
     nofile-limits: true # increase nofile limits
@@ -32,9 +31,6 @@ modules:
       packages:
         - gum
         - iwd
-        - gnome-shell
-        - gnome-software
-        - nautilus
         - tuned
         - tuned-ppd
         - bolt
@@ -45,44 +41,27 @@ modules:
         - qemu-kvm
         - libguestfs-tools
         - python3-libguestfs
-        - fdk-aac 
-        - fdk-aac.i686
         - steam # just like on bazzite
         - distrobox
         - codium
         - uupd
         - waydroid
-        - ptyxis
         - plymouth-plugin-script
         - plymouth-scripts
         - ImageMagick
         - waydroid-helper
         - wl-clipboard
         - gparted
-        - nautilus-python
-        - python-dbus
         - sbsigntools
-#        - docker-ce
-#        - docker-ce-cli
-#        - containerd.io
-#        - docker-buildx-plugin
-#        - docker-compose-plugin
-        - gnome-disk-utility
         - firewall-config
         - cachyos-settings
         - cachyos-ksm-settings
         - scx-manager
         - scx-tools
         - scx-scheds
-        - papirus-icon-theme
-        - libav-util
     remove:
       auto-remove: false
       packages:
-        - nvtop
-        - htop
-        - btop
-        - libfdk-aac
         - zram-generator-defaults
   - type: default-flatpaks
     configurations:
@@ -98,12 +77,10 @@ modules:
           - io.github.shiftey.Desktop
           - me.iepure.devtoolbox
           - org.libreoffice.LibreOffice
-          - org.gnome.Calendar
           - org.inkscape.Inkscape
           - org.gnome.DejaDup
           - io.github.celluloid_player.Celluloid
           - com.mattjakeman.ExtensionManager
-          - io.bassi.Amberol
           - org.gnome.TextEditor
           - com.github.wwmm.easyeffects
           - org.pipewire.Helvum
@@ -113,12 +90,10 @@ modules:
           - com.spotify.Client
           - io.github.nozwock.Packet
           - org.nickvision.tagger
-          - org.gnome.SoundRecorder
           - io.github.vikdevelop.SaveDesktop
+          - md.obsidian.Obsidian
           - com.heroicgameslauncher.hgl
-          - org.prismlauncher.PrismLauncher
           - org.nicotine_plus.Nicotine
-          - io.anytype.anytype
           - org.virt_manager.virt-manager
           - com.github.Bleuzen.FFaudioConverter
           - com.sindresorhus.Caprine
@@ -133,18 +108,6 @@ modules:
       disabled:
         - rpm-ostreed-automatic.timer
         - bootc-fetch-apply-updates.timer
-  - type: gnome-extensions
-    install:
-      - AppIndicator and KStatusNotifierItem Support
-#      - 5112 # Tailscale Status
-#      - 4470 # Media Controls
-#      - Grand Theft Focus
-#      - Removable Drive Menu
-      - 4269 # Alphabetical app grid
-      - Caffeine
-  - type: gschema-overrides
-    include:
-      - zz1-common.gschema.override
   - type: justfiles
     validate: true
     install: true

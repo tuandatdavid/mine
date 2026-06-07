@@ -13,5 +13,6 @@ image-version: 44 # latest is also supported if you want new updates ASAP
 # you can include multiple instances of the same module
 modules:
   - from-file: common.yml
-  - from-file: framework.yml
+  - from-file: gnome.yml
+  - from-file: framework-gnome.yml
 #  - from-file: docker.yml

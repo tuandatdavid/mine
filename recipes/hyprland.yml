@@ -1,0 +1,9 @@
+modules:
+- type: dnf
+  repos:
+    cleanup: true
+    copr:
+      - lionheartp/Hyprland
+  install:
+    packages:
+      - noctalia-git

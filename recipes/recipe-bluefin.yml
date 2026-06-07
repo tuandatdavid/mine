@@ -30,7 +30,7 @@ modules:
           destination: /tmp/certs/private_key.priv
   - type: dnf
     repos:
-      cleanup: false
+      cleanup: true
       files:
         - codium.repo
         - gum.repo
@@ -66,10 +66,7 @@ modules:
         - scx-scheds
         - scx-manager
         - scx-tools
-        - papirus-icon-theme
         - morewaita-icon-theme
-        - nextcloud-client
-        - nextcloud-client-nautilus
     remove:
       packages:
        - zram-generator-defaults
@@ -77,41 +74,6 @@ modules:
     validate: true
     include:
       - 20-spicetify.just
-  - type: dnf
-    repos:
-      cleanup: true
-      copr:
-        - zktaiga/fw-fanctrl
-      files:
-        - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
-    install:
-      packages:
-        - fw-fanctrl
-        - fw-ectool
-        - powertop
-        - gtkpod
-        - framework-system
-  - type: default-flatpaks
-    configurations:
-      - scope: system
-        repo:
-          title: Flathub
-        install: # system flatpaks we want all users to have and not remove
-          - au.stevetech.yafi
-          - org.gnome.Firmware
-          - org.easycoding.TunedSwitcher
-          - org.gnome.PowerStats
-  - type: gnome-extensions
-    install:
-      - 7864 # Framework Fan Control
-      - 5724 # Battery Health Charging
-      - 1475 # Battery Time
-  - type: gschema-overrides
-    include:
-      - zz2-framework.gschema.override
-#  - type: script
-#    snippets:
-#      - "plymouth-set-default-theme framework"
   - type: rpm-ostree
     repos:
       - netbird.repo
@@ -119,5 +81,6 @@ modules:
       - netbird
       - netbird-ui
       - gnome-shell-extension-appindicator
+  - from-file: framework-gnome.yml
   - type: initramfs
   - type: signing

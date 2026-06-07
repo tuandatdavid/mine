@@ -20,9 +20,19 @@ modules:
         repo:
           title: Flathub
         install: # system flatpaks we want all users to have and not remove
+          - au.stevetech.yafi
           - org.gnome.Firmware
           - org.easycoding.TunedSwitcher
-  - type: script
-    snippets:
-      - "plymouth-set-default-theme framework"
-  - type: initramfs
+          - org.gnome.PowerStats
+  - type: gnome-extensions
+    install:
+      - 7864 # Framework Fan Control
+      - 5724 # Battery Health Charging
+      - 1475 # Battery Time
+  - type: gschema-overrides
+    include:
+      - zz2-framework.gschema.override
+#  - type: script
+#    snippets:
+#      - "plymouth-set-default-theme framework"
+#  - type: initramfs
