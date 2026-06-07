@@ -63,6 +63,8 @@ modules:
       auto-remove: false
       packages:
         - zram-generator-defaults
+        - pipewire-libs.i686
+        - fdk-aac-free.i686
   - type: default-flatpaks
     configurations:
       - notify: true
