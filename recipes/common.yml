@@ -29,6 +29,7 @@ modules:
         - bieszczaders/kernel-cachyos-addons
 #      nonfree: rpmfusion
     install:
+      allow-erasing: true
       packages:
         - gum
         - iwd
@@ -60,12 +61,12 @@ modules:
         - scx-manager
         - scx-tools
         - scx-scheds
+        - pipewire-libs.i686
     remove:
       auto-remove: false
       packages:
         - zram-generator-defaults
-        - pipewire-libs.i686
-        - fdk-aac-free.i686
+
   - type: default-flatpaks
     configurations:
       - notify: true
