@@ -10,7 +10,7 @@ modules:
       packages:
         - fw-fanctrl
         - fw-ectool
-        - framework-system
+#        - framework-system
         - powertop
 #        - gtkpod
         - dosfstools
