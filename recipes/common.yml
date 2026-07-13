@@ -106,7 +106,7 @@ modules:
       - "chmod +x /usr/bin/ugum"
       - "chmod +x /usr/share/bash-prexec"
       - "chmod +x /usr/libexec/bazzite-boot-remount"
-      - "dnf5 install --setopt=tsflags=noscript -y netbird netbird-ui"
+      - "dnf5 install --setopt=tsflags=noscripts -y netbird netbird-ui"
   #    - "rpm -i --nodigest $CONFIG_DIRECTORY/dnf/epson-inkjet-printer-escpr-1.8.6-1.src.rpm"
     #  - "rpm -i --nodigest $CONFIG_DIRECTORY/dnf/epson-printer-utility-1.2.2-1.x86_64.rpm"
     scripts:
