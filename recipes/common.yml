@@ -1,10 +1,4 @@
 modules:
-  - type: rpm-ostree
-    repos:
-      - netbird.repo
-    install:
-      - netbird
-      - netbird-ui
   - type: signing
   - type: brew
     nofile-limits: true # increase nofile limits
@@ -20,6 +14,7 @@ modules:
       files:
         - codium.repo
         - gum.repo
+        - netbird.repo
 #        - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
         - https://download.docker.com/linux/fedora/docker-ce.repo
         - https://negativo17.org/repos/fedora-steam.repo
@@ -67,6 +62,7 @@ modules:
       packages:
         - zram-generator-defaults
 
+  - type: scripts
   - type: default-flatpaks
     configurations:
       - notify: true
@@ -123,6 +119,7 @@ modules:
       - "chmod +x /usr/bin/ugum"
       - "chmod +x /usr/share/bash-prexec"
       - "chmod +x /usr/libexec/bazzite-boot-remount"
+      - "dnf5 install --setopt=tsflags=noscript -y netbird netbird-ui"
   #    - "rpm -i --nodigest $CONFIG_DIRECTORY/dnf/epson-inkjet-printer-escpr-1.8.6-1.src.rpm"
     #  - "rpm -i --nodigest $CONFIG_DIRECTORY/dnf/epson-printer-utility-1.2.2-1.x86_64.rpm"
     scripts:
