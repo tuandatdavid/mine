@@ -2,7 +2,7 @@
 
 spicetify:
     #!/usr/bin/bash
-    cd /var/tmp
+    cd /tmp
     git clone https://github.com/boudywho/easy-spicetify-linux.git
     cd easy-spicetify-arch
     chmod +x universal-spicetify.sh
