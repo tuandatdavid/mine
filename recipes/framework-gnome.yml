@@ -36,3 +36,7 @@ modules:
 #    snippets:
 #      - "plymouth-set-default-theme framework"
 #  - type: initramfs
+  - type: script
+    snippets:
+      - "plymouth-set-default-theme framework-penguin"
+  - type: initramfs
