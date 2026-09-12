@@ -19,6 +19,10 @@ modules:
     files:
       - source: system/etc   # copies `files/system/etc` (etc means etc inside it) into your image's /etc folder `/etc`
         destination: /etc
+  - type: files
+    files:
+      - source: system/usr/share/plymouth/themes
+        destination: /usr/share/plymouth/themes
   - type: script
     scripts:
       - signkernel.sh
