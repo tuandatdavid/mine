@@ -47,6 +47,7 @@ modules:
     install:
       allow-erasing: true
       packages:
+        - nextcloud-client
         - adw-gtk3-theme
         - libvirt-daemon-config-network
         - libvirt-daemon-kvm
