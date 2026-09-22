@@ -56,7 +56,6 @@ modules:
         - scx-manager
         - scx-tools
         - scx-scheds
-        - pipewire-libs.i686
     remove:
       auto-remove: false
       packages:
