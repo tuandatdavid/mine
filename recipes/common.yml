@@ -58,7 +58,7 @@ modules:
         - scx-manager
         - scx-tools
         - scx-scheds
-        - morewaita-icon-theme
+        - pam-devel
     remove:
       auto-remove: false
       packages:
