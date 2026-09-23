@@ -26,6 +26,7 @@ modules:
     install:
       allow-erasing: true
       packages:
+        - nextcloud-client
         - gum
         - iwd
         - tuned
@@ -56,13 +57,14 @@ modules:
         - scx-manager
         - scx-tools
         - scx-scheds
+        - morewaita-icon-theme
     remove:
       auto-remove: false
       packages:
         - zram-generator-defaults
   - type: default-flatpaks
     configurations:
-      - notify: true
+      - notify: false
         scope: system
         repo:
           title: Flathub
@@ -73,7 +75,6 @@ modules:
           - net.nokyan.Resources
           - io.github.shiftey.Desktop
           - me.iepure.devtoolbox
-          - org.libreoffice.LibreOffice
           - org.inkscape.Inkscape
           - org.gnome.DejaDup
           - io.github.celluloid_player.Celluloid
@@ -112,6 +113,10 @@ modules:
 #      - cachy-kernel.sh
       - plymouth.sh
       - segoefont.sh
+  - type: copy
+    from: ghcr.io/projectbluefin/common:latest
+    src: /system_files/shared/
+    dest: /
   - type: systemd
     system:
       enabled:
