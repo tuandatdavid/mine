@@ -22,6 +22,7 @@ modules:
         - ublue-os/packages
         - cuteneko/waydroid-helper
         - bieszczaders/kernel-cachyos-addons
+        - trixieua/morewaita-icon-theme
 #      nonfree: rpmfusion
     install:
       allow-erasing: true
