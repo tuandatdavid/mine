@@ -72,6 +72,7 @@ modules:
         - scx-manager
         - scx-tools
         - morewaita-icon-theme
+        - pam-devel
     remove:
       packages:
        - zram-generator-defaults
