@@ -24,4 +24,4 @@ modules:
     install:
       allow-erasing: true
       packages:
-        cosmic-desktop
+        - cosmic-desktop
