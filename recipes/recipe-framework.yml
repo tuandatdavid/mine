@@ -17,11 +17,11 @@ modules:
 #  - from-file: gnome.yml
 #  - from-file: framework-gnome.yml no gnome so no gnome.yml
 #  - from-file: docker.yml
-  - type: dnf
-    repos:
-      copr:
-        - ryanabx/cosmic-epoch
-    install:
-      allow-erasing: true
-      packages:
-        - cosmic-desktop
+#  - type: dnf
+#    repos:
+#       copr:
+#        - ryanabx/cosmic-epoch
+#    install:
+#      allow-erasing: true
+#      packages:
+#        - cosmic-desktop
