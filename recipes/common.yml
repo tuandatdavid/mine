@@ -63,6 +63,7 @@ modules:
       auto-remove: false
       packages:
         - zram-generator-defaults
+        - systemd-oomd-defaults
   - type: default-flatpaks
     configurations:
       - notify: false
