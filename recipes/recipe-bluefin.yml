@@ -76,6 +76,7 @@ modules:
     remove:
       packages:
        - zram-generator-defaults
+       - systemd-oomd-defaults
   - type: justfiles
     validate: true
     include:
