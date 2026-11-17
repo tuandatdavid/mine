@@ -30,7 +30,9 @@ modules:
     install:
       - 7864 # Framework Fan Control
       - 5724 # Battery Health Charging
-      - 1475 # Battery Time
+  #    - 1475 # Battery Time
+      - 11611 # Galaxy Buds
+      - 2929 # Battery Time (Percentage) Compact
   - type: gschema-overrides
     include:
       - zz2-framework.gschema.override
