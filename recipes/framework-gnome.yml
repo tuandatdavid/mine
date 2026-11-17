@@ -3,7 +3,9 @@ modules:
     repos:
       cleanup: true
       copr:
-        - zktaiga/fw-fanctrl
+#        - zktaiga/fw-fanctrl
+        - ublue-os/staging
+
       files:
         - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
     install:
