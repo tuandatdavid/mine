@@ -24,7 +24,6 @@ modules:
           title: Flathub
         install: # system flatpaks we want all users to have and not remove
           - au.stevetech.yafi
-          - org.gnome.Firmware
           - org.easycoding.TunedSwitcher
           - org.gnome.PowerStats
   - type: gnome-extensions
