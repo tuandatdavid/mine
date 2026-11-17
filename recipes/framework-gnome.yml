@@ -31,7 +31,7 @@ modules:
       - 7864 # Framework Fan Control
       - 5724 # Battery Health Charging
   #    - 1475 # Battery Time
-      - 11611 # Galaxy Buds
+  #    - 11611 # Galaxy Buds no support for GNOME 51
       - 2929 # Battery Time (Percentage) Compact
   - type: gschema-overrides
     include:
